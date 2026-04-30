@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Football Quiz</title>
+      <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    max-width: 600px;
+    margin: 40px auto;
+  }
+  .card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+  }
+  h1 { color: #080808; }
+  p { color: #010101; line-height: 1.7; }
+  .question { margin-bottom: 20px; }
+  .question p { font-weight: bold; margin-bottom: 8px; }
+  .option { display: block; margin-bottom: 6px; }
+  button { margin-top: 20px; padding: 10px 24px; background-color: #1D9E75; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; }
+  #result { margin-top: 20px; font-size: 18px; font-weight: bold; color: #1D9E75; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Football Quiz </h1>
+    <p>Test your football knowledge with these 3 questions!</p>
+
+    <div class="question">
+      <p>1. How many World Cup trophies has Brazil won?</p>
+      <label class="option"><input type="radio" name="q1" value="4"> 4</label>
+      <label class="option"><input type="radio" name="q1" value="6"> 6</label>
+      <label class="option"><input type="radio" name="q1" value="3"> 3</label>
+      <label class="option"><input type="radio" name="q1" value="5"> 5</label>
+    </div>
+
+    <div class="question">
+      <p>2. Which player won the UCL, World Cup and Ballon D'or in the same year?</p>
+      <label class="option"><input type="radio" name="q2" value="Kaka"> Kaka</label>
+      <label class="option"><input type="radio" name="q2" value="None"> None</label>
+      <label class="option"><input type="radio" name="q2" value="Lionel Messi"> Lionel Messi</label>
+      <label class="option"><input type="radio" name="q2" value="Pelé"> Pelé</label>
+      <label class="option"><input type="radio" name="q2" value="Zinedine Zidane"> Zinedine Zidane</label>
+    </div>
+
+    <div class="question">
+      <p>3. Which teams featured in the UCL final in 2012?</p>
+      <label class="option"><input type="radio" name="q3" value="Chelsea vs Bayern Munich"> Chelsea vs Bayern Munich</label>
+      <label class="option"><input type="radio" name="q3" value="Real Madrid vs Atletico Madrid"> Real Madrid vs Atletico Madrid</label>
+      <label class="option"><input type="radio" name="q3" value="Barcelona vs Manchester United"> Barcelona vs Manchester United</label>
+      <label class="option"><input type="radio" name="q3" value="Bayern Munich vs Juventus"> Bayern Munich vs Juventus</label>
+    </div>
+
+    <button onclick="submitQuiz()">Submit Answers</button>
+    <p id="result"></p>
+  </div>
+<script src="sample.js"></script>
+</body>
+</html>
